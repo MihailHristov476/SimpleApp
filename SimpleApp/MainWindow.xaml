@@ -1,0 +1,23 @@
+﻿<Window x:Class="SimpleApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="1" HorizontalAlignment="Left" Margin="339,236,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="339,276,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="339,318,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_3"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,238,0,0" TextWrapping="Wrap" Text="Сумма нечетных элементов " VerticalAlignment="Top" Height="20" Width="154"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="154"><Run Text="Индексы элементов "/><Run Text="&gt; A"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="24,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="204" Text="Замена минимального числа нулем"/>
+        <TextBox x:Name="textBoxNumber" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Ввести число А" VerticalAlignment="Top" Width="120" Margin="183,275,0,0" />
+        <TextBox x:Name="textBoxMass" HorizontalAlignment="Left" Height="26" Margin="339,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="357"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="154"><Run Text="Ввести массив "/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="24,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Итог"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="textBoxTotal" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="489" Margin="108,365,0,0"  />
+
+    </Grid>
+</Window>
